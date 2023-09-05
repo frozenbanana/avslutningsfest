@@ -1,258 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>avslutningsfest</title>
-    <link rel="stylesheet" href="https://unpkg.com/awsm.css/dist/awsm.min.css">
-    <script type="module" src="dataformsjs/js/web-components/image-gallery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/awsm.css/dist/awsm.min.css"
+    />
+    <script
+      type="module"
+      src="dataformsjs/js/web-components/image-gallery.min.js"
+    ></script>
 
     <style>
-        html, body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #faebd7;
-        }
+      html,
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #faebd7;
+      }
 
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px , 1fr)); 
-            gap: 12px;
-        }
+      .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 12px;
+      }
 
-        img {
-            max-height: 300px;
-        }
+      img {
+        max-height: 300px;
+      }
 
-        .initativ {
-            margin: 8px 0;
-            padding: 4px 16px;
-            border: 2px dotted black;
-            text-align: center;
-        }
-        .initativ p {
-            font-style: italic;
-        }
+      .initativ {
+        margin: 8px 0;
+        padding: 4px 16px;
+        border: 3px dotted black;
+        text-align: center;
+      }
+      .initativ p {
+        font-style: italic;
+      }
 
-        .red {
-            border-color: red;
-        }
+      .red {
+        border-color: red;
+      }
 
-        .purple {
-            border-color: purple;
-        }
+      .purple {
+        border-color: purple;
+      }
 
-        .green {
-            border-color: greenyellow;
-        }
+      .green {
+        border-color: green;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <h1>avslutningsfest<br> 9de september 2023</h1>
-        <p>en fest som avslutar en era, hemma hos oss!</p>
+      <h1>
+        avslutningsfest<br />
+        9de september 2023
+      </h1>
+      <p>en fest som avslutar en era, hemma hos oss!</p>
 
-        <section>
-            <h2>initialtiv</h2>
-            <div class="initativ red">
-                <div>
-                    <img src="./pics/henry-restaurang.jpg" alt="henry">
-                    <h4>restaurang 'bara starkt'</h4>
-                    <p>henry serverar mat från <b>18.00 - 21.00</b> för symboliska summor</p>
-                    <p>a. som tam (morot & mango sallad of doom)</p>
-                    <p>b. laarb man savilatt (googla det.. men det finns chilli)</p>
-                    <p>c. äpple & chilli -kaka</p>
-                    <small>jaaa, allt är veganskt ☘️</small>
-                </div>
-            </div>
-            <div class="initativ purple">
-                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-                <img src="./pics/lisa.png" alt="lisa">
-                <img src="./pics/lisa-dans.gif" alt="lisa dans">
-            </div>
-                <h4>twerkshop</h4>
-                <p>lisa visar hur man twerkar <b>21.00 - 21.30</b></p>
-            </div>
-            <div class="initativ green">
-                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-                <img src="./pics/palle.jpeg" alt="palle">
-                <img src="./pics/twister.gif" alt="twister">
-            </div>
-                <h4>twister</h4>
-                <p>Palle håller i en twister-turnering <b>21.47 - 22.21</b></p>
-                <p>Anmäl dig till honom på plats</p>
-            </div>
-            <h2>tanken</h2>
-            <p>henry lämnar landet för thailand. det har varit trevligt här. henry och martin har haft det trevligt
-                ihop. det vill vi fira med att samla ihop kära och nära. ta med er något som ni tror kan göra stämningen stämnigare.</p>
-        </section>
-
-        <section>
-            <h2>var, hur och när</h2>
-            <p>om du ska äta <b>kl ~18.00 den 9de september</b></p>
-            <p>om du ska inte äta <b>kl ~21.00 den 9de september</b></p>
-            <p>addressen är <b>gustaf rydbergsg. 1</b> (typ vid kronprinsen)</p>
-            <p>koden är 1910, våning 4</p>
-            <p>mat, mysbelysning, musik och era initativ</p>
-        </section>
-        
-        <div class="gallery-container">
-            <h2>bilder från den senaste tiden</h2>
-            <image-gallery image="./pics/kronprinsen.jpeg">
-                <img src="./pics/kronprinsen.jpeg" alt="kronprinsen" />
-            </image-gallery>
-
-            <image-gallery image="./pics/borderland1.jpeg">
-                <img src="./pics/borderland1.jpeg" alt="borderland" />
-            </image-gallery>
-
-            <image-gallery image="./pics/cph1.jpeg">
-                <img src="./pics/cph1.jpeg" alt="copenhagen" />
-            </image-gallery>
-
-            <image-gallery image="./pics/greece1.jpeg">
-                <img src="./pics/greece1.jpeg" alt="greece" />
-            </image-gallery>
-
-            <image-gallery image="./pics/greece2.jpeg">
-                <img src="./pics/greece2.jpeg" alt="greece" />
-            </image-gallery>
-
-            <image-gallery image="./pics/greece3.gif">
-                <img src="./pics/greece3.gif" alt="greece" />
-            </image-gallery>
-
-            <image-gallery image="./pics/malmo1.jpeg">
-                <img src="./pics/malmo1.jpeg" alt="malmo" />
-            </image-gallery>
-
-            <image-gallery image="./pics/purplefields1.jpeg">
-                <img src="./pics/purplefields1.jpeg" alt="pf" />
-            </image-gallery>
-
-            <image-gallery image="./pics/purplefields2.jpeg">
-                <img src="./pics/purplefields2.jpeg" alt="pf" />
-            </image-gallery>
-
-            <image-gallery image="./pics/purplefields3.jpeg">
-                <img src="./pics/purplefields3.jpeg" alt="pf" />
-            </image-gallery>
-
-            <image-gallery image="./pics/skane1.jpeg">
-                <img src="./pics/skane1.jpeg" alt="skane" />
-            </image-gallery>
-
-            <image-gallery image="./pics/skane2.jpeg">
-                <img src="./pics/skane2.jpeg" alt="skane" />
-            </image-gallery>
-
-            <image-gallery image="./pics/gurka1.jpeg">
-                <img src="./pics/gurka1.jpeg" alt="gurka" />
-            </image-gallery>
-
-            <image-gallery image="./pics/ikea1.jpeg">
-                <img src="./pics/ikea1.jpeg" alt="ikea" />
-            </image-gallery>
-
-            <p><i>fint va?</i></p>
+      <section>
+        <h2>initialtiv</h2>
+        <div class="initativ red">
+          <div>
+            <img src="./pics/henry-restaurang.jpg" alt="henry" />
+            <h4>restaurang 'bara starkt'</h4>
+            <p>
+              henry serverar mat från <b>18.00 - 21.00</b> för symboliska summor
+            </p>
+            <p>a. som tam (morot & mango sallad of doom)</p>
+            <p>b. laarb man savilatt (googla det.. men det finns chilli)</p>
+            <p>c. äpple & chilli -kaka</p>
+            <small>jaaa, allt är veganskt ☘️</small>
+          </div>
         </div>
+        <div class="initativ purple">
+          <div style="display: flex; flex-wrap: wrap; justify-content: center">
+            <img src="./pics/lisa.png" alt="lisa" />
+            <img src="./pics/lisa-dans.gif" alt="lisa dans" />
+          </div>
+          <h4>twerkshop</h4>
+          <p>lisa visar hur man twerkar <b>21.00 - 21.30</b></p>
+        </div>
+        <div class="initativ green">
+          <div style="display: flex; flex-wrap: wrap; justify-content: center">
+            <img src="./pics/palle.jpeg" alt="palle" />
+            <img src="./pics/twister.gif" alt="twister" />
+          </div>
+          <h4>twister</h4>
+          <p>Palle håller i en twister-turnering <b>21.47 - 22.21</b></p>
+          <p>Anmäl dig till honom på plats</p>
+        </div>
+        <h2>tanken</h2>
+        <p>
+          henry lämnar landet för thailand. det har varit trevligt här. henry
+          och martin har haft det trevligt ihop. det vill vi fira med att samla
+          ihop kära och nära. ta med er något som ni tror kan göra stämningen
+          stämnigare.
+        </p>
+      </section>
 
-        <section>
-            <h2>skriv här om ni kommer 👇🏼</h2>
-            <iframe id="JotFormIFrame-232413016837047" title="Form" onload="window.parent.scrollTo(0,0)"
-                allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera"
-                src="https://form.jotform.com/232413016837047" frameborder="0"
-                style="min-width:100%;max-width:100%;height:539px;border:none;" scrolling="no">
-            </iframe>
+      <section>
+        <h2>var, hur och när</h2>
+        <p>om du ska äta <b>kl ~18.00 den 9de september</b></p>
+        <p>om du ska inte äta <b>kl ~21.00 den 9de september</b></p>
+        <p>addressen är <b>gustaf rydbergsg. 1</b> (typ vid kronprinsen)</p>
+        <p>koden är 1910, våning 4</p>
+        <p>mat, mysbelysning, musik och era initativ</p>
+      </section>
 
-        </section>
+      <div class="gallery-container">
+        <h2>bilder från den senaste tiden</h2>
+        <image-gallery image="./pics/kronprinsen.jpeg">
+          <img src="./pics/kronprinsen.jpeg" alt="kronprinsen" />
+        </image-gallery>
+
+        <image-gallery image="./pics/borderland1.jpeg">
+          <img src="./pics/borderland1.jpeg" alt="borderland" />
+        </image-gallery>
+
+        <image-gallery image="./pics/cph1.jpeg">
+          <img src="./pics/cph1.jpeg" alt="copenhagen" />
+        </image-gallery>
+
+        <image-gallery image="./pics/greece1.jpeg">
+          <img src="./pics/greece1.jpeg" alt="greece" />
+        </image-gallery>
+
+        <image-gallery image="./pics/greece2.jpeg">
+          <img src="./pics/greece2.jpeg" alt="greece" />
+        </image-gallery>
+
+        <image-gallery image="./pics/greece3.gif">
+          <img src="./pics/greece3.gif" alt="greece" />
+        </image-gallery>
+
+        <image-gallery image="./pics/malmo1.jpeg">
+          <img src="./pics/malmo1.jpeg" alt="malmo" />
+        </image-gallery>
+
+        <image-gallery image="./pics/purplefields1.jpeg">
+          <img src="./pics/purplefields1.jpeg" alt="pf" />
+        </image-gallery>
+
+        <image-gallery image="./pics/purplefields2.jpeg">
+          <img src="./pics/purplefields2.jpeg" alt="pf" />
+        </image-gallery>
+
+        <image-gallery image="./pics/purplefields3.jpeg">
+          <img src="./pics/purplefields3.jpeg" alt="pf" />
+        </image-gallery>
+
+        <image-gallery image="./pics/skane1.jpeg">
+          <img src="./pics/skane1.jpeg" alt="skane" />
+        </image-gallery>
+
+        <image-gallery image="./pics/skane2.jpeg">
+          <img src="./pics/skane2.jpeg" alt="skane" />
+        </image-gallery>
+
+        <image-gallery image="./pics/gurka1.jpeg">
+          <img src="./pics/gurka1.jpeg" alt="gurka" />
+        </image-gallery>
+
+        <image-gallery image="./pics/ikea1.jpeg">
+          <img src="./pics/ikea1.jpeg" alt="ikea" />
+        </image-gallery>
+
+        <p><i>fint va?</i></p>
+      </div>
+
+      <section>
+        <h2>skriv här om ni kommer 👇🏼</h2>
+        <iframe
+          id="JotFormIFrame-232413016837047"
+          title="Form"
+          onload="window.parent.scrollTo(0,0)"
+          allowtransparency="true"
+          allowfullscreen="true"
+          allow="geolocation; microphone; camera"
+          src="https://form.jotform.com/232413016837047"
+          frameborder="0"
+          style="min-width: 100%; max-width: 100%; height: 539px; border: none"
+          scrolling="no"
+        >
+        </iframe>
+      </section>
     </main>
 
-
     <script type="text/javascript">
-        var ifr = document.getElementById("JotFormIFrame-232413016837047");
-        if (ifr) {
-            var src = ifr.src;
-            var iframeParams = [];
-            if (window.location.href && window.location.href.indexOf("?") > -1) {
-                iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-            }
-            if (src && src.indexOf("?") > -1) {
-                iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-                src = src.substr(0, src.indexOf("?"))
-            }
-            iframeParams.push("isIframeEmbed=1");
-            ifr.src = src + "?" + iframeParams.join('&');
+      var ifr = document.getElementById("JotFormIFrame-232413016837047");
+      if (ifr) {
+        var src = ifr.src;
+        var iframeParams = [];
+        if (window.location.href && window.location.href.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(
+            window.location.href
+              .substr(window.location.href.indexOf("?") + 1)
+              .split("&")
+          );
         }
-        window.handleIFrameMessage = function (e) {
-            if (typeof e.data === 'object') { return; }
-            var args = e.data.split(":");
-            if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
-            if (!iframe) { return; }
-            switch (args[0]) {
-                case "scrollIntoView":
-                    iframe.scrollIntoView();
-                    break;
-                case "setHeight":
-                    iframe.style.height = args[1] + "px";
-                    if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
-                        iframe.style.minHeight = args[1] + "px";
-                    }
-                    break;
-                case "collapseErrorPage":
-                    if (iframe.clientHeight > window.innerHeight) {
-                        iframe.style.height = window.innerHeight + "px";
-                    }
-                    break;
-                case "reloadPage":
-                    window.location.reload();
-                    break;
-                case "loadScript":
-                    if (!window.isPermitted(e.origin, ['jotform.com', 'jotform.pro'])) { break; }
-                    var src = args[1];
-                    if (args.length > 3) {
-                        src = args[1] + ':' + args[2];
-                    }
-                    var script = document.createElement('script');
-                    script.src = src;
-                    script.type = 'text/javascript';
-                    document.body.appendChild(script);
-                    break;
-                case "exitFullscreen":
-                    if (window.document.exitFullscreen) window.document.exitFullscreen();
-                    else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen();
-                    else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen();
-                    else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen();
-                    else if (window.document.msExitFullscreen) window.document.msExitFullscreen();
-                    break;
-            }
-            var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-            if (isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-                var urls = { "docurl": encodeURIComponent(document.URL), "referrer": encodeURIComponent(document.referrer) };
-                iframe.contentWindow.postMessage(JSON.stringify({ "type": "urls", "value": urls }), "*");
-            }
-        };
-        window.isPermitted = function (originUrl, whitelisted_domains) {
-            var url = document.createElement('a');
-            url.href = originUrl;
-            var hostname = url.hostname;
-            var result = false;
-            if (typeof hostname !== 'undefined') {
-                whitelisted_domains.forEach(function (element) {
-                    if (hostname.slice((-1 * element.length - 1)) === '.'.concat(element) || hostname === element) {
-                        result = true;
-                    }
-                });
-                return result;
-            }
-        };
-        if (window.addEventListener) {
-            window.addEventListener("message", handleIFrameMessage, false);
-        } else if (window.attachEvent) {
-            window.attachEvent("onmessage", handleIFrameMessage);
+        if (src && src.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(
+            src.substr(src.indexOf("?") + 1).split("&")
+          );
+          src = src.substr(0, src.indexOf("?"));
         }
+        iframeParams.push("isIframeEmbed=1");
+        ifr.src = src + "?" + iframeParams.join("&");
+      }
+      window.handleIFrameMessage = function (e) {
+        if (typeof e.data === "object") {
+          return;
+        }
+        var args = e.data.split(":");
+        if (args.length > 2) {
+          iframe = document.getElementById(
+            "JotFormIFrame-" + args[args.length - 1]
+          );
+        } else {
+          iframe = document.getElementById("JotFormIFrame");
+        }
+        if (!iframe) {
+          return;
+        }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            if (
+              !isNaN(args[1]) &&
+              parseInt(iframe.style.minHeight) > parseInt(args[1])
+            ) {
+              iframe.style.minHeight = args[1] + "px";
+            }
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            if (!window.isPermitted(e.origin, ["jotform.com", "jotform.pro"])) {
+              break;
+            }
+            var src = args[1];
+            if (args.length > 3) {
+              src = args[1] + ":" + args[2];
+            }
+            var script = document.createElement("script");
+            script.src = src;
+            script.type = "text/javascript";
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if (window.document.exitFullscreen)
+              window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)
+              window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)
+              window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)
+              window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)
+              window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = e.origin.indexOf("jotform") > -1 ? true : false;
+        if (
+          isJotForm &&
+          "contentWindow" in iframe &&
+          "postMessage" in iframe.contentWindow
+        ) {
+          var urls = {
+            docurl: encodeURIComponent(document.URL),
+            referrer: encodeURIComponent(document.referrer),
+          };
+          iframe.contentWindow.postMessage(
+            JSON.stringify({ type: "urls", value: urls }),
+            "*"
+          );
+        }
+      };
+      window.isPermitted = function (originUrl, whitelisted_domains) {
+        var url = document.createElement("a");
+        url.href = originUrl;
+        var hostname = url.hostname;
+        var result = false;
+        if (typeof hostname !== "undefined") {
+          whitelisted_domains.forEach(function (element) {
+            if (
+              hostname.slice(-1 * element.length - 1) === ".".concat(element) ||
+              hostname === element
+            ) {
+              result = true;
+            }
+          });
+          return result;
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
     </script>
-</body>
-
+  </body>
 </html>
+
